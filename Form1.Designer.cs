@@ -40,6 +40,10 @@
             this.textBoxnombre = new System.Windows.Forms.TextBox();
             this.textBoxraza = new System.Windows.Forms.TextBox();
             this.insertar = new System.Windows.Forms.Button();
+            this.dateTimePickerFechaCreacion = new System.Windows.Forms.DateTimePicker();
+            this.Actualizar = new System.Windows.Forms.Button();
+            this.Buscar = new System.Windows.Forms.Button();
+            this.textBoxHistoria = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonajes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNivel_De_poder)).BeginInit();
             this.SuspendLayout();
@@ -112,6 +116,11 @@
             // numericUpDownNivel_De_poder
             // 
             this.numericUpDownNivel_De_poder.Location = new System.Drawing.Point(162, 144);
+            this.numericUpDownNivel_De_poder.Maximum = new decimal(new int[] {
+            1000006,
+            0,
+            0,
+            0});
             this.numericUpDownNivel_De_poder.Name = "numericUpDownNivel_De_poder";
             this.numericUpDownNivel_De_poder.Size = new System.Drawing.Size(120, 20);
             this.numericUpDownNivel_De_poder.TabIndex = 7;
@@ -140,7 +149,7 @@
             // 
             // insertar
             // 
-            this.insertar.Location = new System.Drawing.Point(434, 144);
+            this.insertar.Location = new System.Drawing.Point(634, 287);
             this.insertar.Name = "insertar";
             this.insertar.Size = new System.Drawing.Size(75, 23);
             this.insertar.TabIndex = 11;
@@ -148,11 +157,49 @@
             this.insertar.UseVisualStyleBackColor = true;
             this.insertar.Click += new System.EventHandler(this.insertar_Click);
             // 
+            // dateTimePickerFechaCreacion
+            // 
+            this.dateTimePickerFechaCreacion.Location = new System.Drawing.Point(521, 84);
+            this.dateTimePickerFechaCreacion.Name = "dateTimePickerFechaCreacion";
+            this.dateTimePickerFechaCreacion.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerFechaCreacion.TabIndex = 12;
+            // 
+            // Actualizar
+            // 
+            this.Actualizar.Location = new System.Drawing.Point(591, 110);
+            this.Actualizar.Name = "Actualizar";
+            this.Actualizar.Size = new System.Drawing.Size(75, 23);
+            this.Actualizar.TabIndex = 13;
+            this.Actualizar.Text = "Actualizar";
+            this.Actualizar.UseVisualStyleBackColor = true;
+            this.Actualizar.Click += new System.EventHandler(this.Actualizar_Click);
+            // 
+            // Buscar
+            // 
+            this.Buscar.Location = new System.Drawing.Point(416, 3);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(75, 23);
+            this.Buscar.TabIndex = 14;
+            this.Buscar.Text = "Buscar";
+            this.Buscar.UseVisualStyleBackColor = true;
+            this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
+            // 
+            // textBoxHistoria
+            // 
+            this.textBoxHistoria.Location = new System.Drawing.Point(330, 59);
+            this.textBoxHistoria.Name = "textBoxHistoria";
+            this.textBoxHistoria.Size = new System.Drawing.Size(161, 20);
+            this.textBoxHistoria.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxHistoria);
+            this.Controls.Add(this.Buscar);
+            this.Controls.Add(this.Actualizar);
+            this.Controls.Add(this.dateTimePickerFechaCreacion);
             this.Controls.Add(this.insertar);
             this.Controls.Add(this.textBoxraza);
             this.Controls.Add(this.textBoxnombre);
@@ -188,6 +235,10 @@
         private System.Windows.Forms.TextBox textBoxnombre;
         private System.Windows.Forms.TextBox textBoxraza;
         private System.Windows.Forms.Button insertar;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFechaCreacion;
+        private System.Windows.Forms.Button Actualizar;
+        private System.Windows.Forms.Button Buscar;
+        private System.Windows.Forms.TextBox textBoxHistoria;
     }
 }
 
